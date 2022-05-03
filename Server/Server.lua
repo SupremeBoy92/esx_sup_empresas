@@ -2,7 +2,7 @@ local empresaSociedad = nil
 
 ESX = nil 
 
-TriggerEvent('esx:SupremeObject', function(obj) ESX = obj end) 
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end) 
 
 for _,v in pairs(Config.Empresas) do
     print("^5[SupremeSystem] ^0Empresas Activas: ^2[" .. v.Name .. "]^0 Propiedad de: ^2["..v.Propietario.."]^0" )
